@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Código QR</title>
+</head>
+<body>
+    <div>
+        <h2 class="text-center pt-4">Código QR</h2>
+        <div class="text-center pt-2">
+            <!-- <img src="imagenQR.png" alt=""> -->
+            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAklEQVR4AewaftIAAAOHSURBVO3BO44sSQIDQWeg7n9l3yeMQCmARFb3fJZm8Q9m/nKYKYeZcpgph5lymCmHmXKYKYeZcpgph5lymCmHmXKYKYeZcpgpH15Kwm9SeSIJb6jcJKGptCT8JpU3DjPlMFMOM+XDl6l8UxKeSEJTaUloKjdJ+CaVb0rCNx1mymGmHGbKhx+WhCdUnkhCU7lReUKlJaGpvJGEJ1R+0mGmHGbKYaZ8+I9JQlN5IglN5f/JYaYcZsphpnz4j1G5SUJTeUKlJaGp/JsdZsphphxmyocfpvJ3SsIbSbhReUPln+QwUw4z5TBTPnxZEv7JVFoSmkpLQlNpSWgqN0n4JzvMlMNMOcyU+Af/Ykl4QuWNJNyo/JsdZsphphxmyoeXktBUWhK+SaWp3CThJgk/KQnfpPKTDjPlMFMOMyX+wX9YEm5UWhKayk0SmspNEprKE0loKt90mCmHmXKYKR++LAlPqLQkPKHyTSotCU8k4UblJglN5SYJTeWNw0w5zJTDTPnwUhKaSkvCGyo3SbhRaUn4JpUnknCjcqPSkvBNh5lymCmHmfLhJZUblTeS0FTeULlJwo3KTRJuVFoSbpLwmw4z5TBTDjPlw0tJeEKlJaGp3CShqbQkPJGEN5LQVG6S0FRaEppKS0JT+abDTDnMlMNM+fBlKi0JLQlPJOEJlSdUnkhCU2lJaCo3SXgjCU3ljcNMOcyUw0z58MNUWhKayo3KG0loKi0JTeWbkvCEyo1KS8I3HWbKYaYcZsqHX6bSktBUWhJuVFoS3khCU7lJwk9KQlNpKt90mCmHmXKYKfEP/sWS0FRaEprKTRKayk0SmsoTSbhR+U2HmXKYKYeZ8uGlJPwmlabyRBKeSEJTeSIJTeVGpSXhCZU3DjPlMFMOM+XDl6l8UxJuknCj0pLQVG6S8IbKE0loKr/pMFMOM+UwUz78sCQ8ofJNSXhDpSXhJglvqLQkPKHyxmGmHGbKYaZ8+I9RaUloKi0JNypN5SYJNyotCS0Jf6fDTDnMlMNM+fB/TqUloSXhRqWpPKHSknCj0pLwTYeZcpgph5ny4Yep/CSVG5WbJNyotCS0JDSVloQ3VH7TYaYcZsphpnz4siT8piQ8oXKj0pLQVG6S0FRaEp5Iwm86zJTDTDnMlPgHM385zJTDTDnMlMNMOcyUw0w5zJTDTDnMlMNMOcyUw0w5zJTDTDnMlP8BqEGDIhyASvwAAAAASUVORK5CYII="> -->
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAYAAAB1PADUAAAAAklEQVR4AewaftIAAATeSURBVO3BQY4kRxIEQdNA/f/Lun2jnwJIpFdzOGsi+CNVS06qFp1ULTqpWnRSteikatFJ1aKTqkUnVYtOqhadVC06qVp0UrXopGrRSdWik6pFn7wE5DepuQEyqbkBMqmZgExqJiCTmgnIjZobIL9JzRsnVYtOqhadVC36ZJmaTUA2AZnUvKHmRs0NkEnNjZpNQDadVC06qVp0UrXoky8D8oSaJ4A8oWYCMqmZ1NwAmdT8JiBPqPmmk6pFJ1WLTqoWffKXAzKpuQHyhJoJyKRmAvI3O6ladFK16KRq0Sf/cWomIDdAbtRMQCY1E5AbIDdq/iYnVYtOqhadVC365MvU/E2AvKFmk5o/yUnVopOqRSdViz5ZBuQ3AZnUTEAmNROQJ9RMQCY1E5AbIJOaGyB/spOqRSdVi06qFuGP/EWATGomIJOaJ4BMauofJ1WLTqoWnVQt+uSXAblRMwG5UfMGkCfUPAHkRs0mIDdqvumkatFJ1aKTqkWfvARkUjMBeUPNDZAn1NwAmdTcALlRcwNkUvMEkEnNBGQCMqnZdFK16KRq0UnVIvyRLwJyo+YGyKTmDSD/JjU3QN5QMwGZ1HzTSdWik6pFJ1WLPnkJyBNqnlDzBpBJzQ2QSc0E5EbNDZAbNW8AmdTcAJnUvHFSteikatFJ1SL8kUVAJjU3QCY1E5AbNROQJ9RMQG7UTECeUDMBeULNDZBJzQRkUrPppGrRSdWik6pFn/xhgExqJiATkBs1E5AJyKRmAvKGmhs1N0BugExqJiA3QCY1b5xULTqpWnRSteiTZWomIJOaGzUTkEnNBGRS84SaJ4BMaiYgN0AmNTdqJiCTmgnIpOYGyKaTqkUnVYtOqhZ98ocBMqm5UfOEmhsgN2reUPOGmgnIDZDfdFK16KRq0UnVok+WAZnUTEAmNROQCcikZgIyqbkBMqmZ1ExA3gDyhJobIJOaCcikZgIyqdl0UrXopGrRSdUi/JEXgDyhZgIyqXkDyI2aGyA3aiYgk5obIJOaN4BMaiYgk5pvOqladFK16KRq0SdfpuYNIDdqJjU3QN4A8gSQGyCTmt8EZFLzxknVopOqRSdViz75MiA3aiYgk5obIJOaCcgmNd8E5EbNn+ykatFJ1aKTqkWf/MuATGomIE8AuVHzBJAngExqboA8AeRPdlK16KRq0UnVIvyR/zAgN2pugNyouQHyhJoJyKTmCSBPqPmmk6pFJ1WLTqoWffISkN+k5kbNE2pugExqbtRMQCYgTwCZ1NyomYD8ppOqRSdVi06qFn2yTM0mIDdqJiCTmhsgk5pJzRNANql5AsikZgIyqdl0UrXopGrRSdWiT74MyBNqngDyhpoJyKTmRs0TQG6AvKHmCSCTmjdOqhadVC06qVr0yf85IE8AmdTcAJnUvAFkUnMD5EbNppOqRSdVi06qFn3yH6fmBsiNmhsgN0AmNZOaGyA3am6A3KiZgExAJjVvnFQtOqladFK16JMvU/ObgNyoeULNBOQGyKRmAjKpmYDcqJmA3ACZ1ExANp1ULTqpWnRSteiTZUD+TWpugDyh5kbNBOQJIJOaGyA3ap5Qs+mkatFJ1aKTqkX4I1VLTqoWnVQtOqladFK16KRq0UnVopOqRSdVi06qFp1ULTqpWnRSteikatFJ1aKTqkX/AzGFMF1I2CWVAAAAAElFTkSuQmCC">
+    
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
